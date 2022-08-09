@@ -15,7 +15,6 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -71,27 +70,45 @@
 
     <div id="toggle-menu">
         <div class="login-section">
-            <div class="login-box">
-                <input type="text" placeholder="아이디">
-                <input type="text" placeholder="비밀번호">
-                <button id="login-btn">
-                    <img src="images/login-btn.png" alt="login-btn">
-                </button>
+            <div class="hidden profile" id="greeting">
+                <img class="profile-img" src="images/profile.png" alt="프로필">
+                <p id="name"></p>
+                <form>
+                    <button id="logout">로그아웃</button>
+                </form>
+                <a href="#">
+                    <div class="academy">아카데미 수강확인</div>
+                </a>
+                <a href="#">
+                    <div class="cancel">예매확인 및 취소</div>
+                </a>
+                <a href="#">
+                    <div class="check">출석부</div>
+                </a>
             </div>
-            <div class="login-info">
-
-                <label for="idsave"><input type="checkbox" id="idsave"> 아이디 저장하기</label>
-                <div class="signup">
-                    <span><a href="./">회원가입</a></span>
-                    <span>|</span>
-                    <span><a href="./">ID / PW 찾기</a></span>
+            <form class="hidden" id="login-form">
+                <div class="login-box">
+                    <input id="id" required type="text" placeholder="아이디">
+                    <input id="pw" required type="text" placeholder="비밀번호">
+                    <button id="login-btn">
+                        <img src="images/login-btn.png" alt="login-btn">
+                    </button>
                 </div>
-            </div>
-            <div class="login-sns">
-                <button><img src="images/naver.png" alt="naver"></button>
-                <button><img src="images/kakaotalk.png" alt="kakaotalk"></button>
-                <button><img src="images/facebook.png" alt="facebook"></button>
-            </div>
+                <div class="login-info">
+
+                    <label for="idsave"><input type="checkbox" id="idsave"> 아이디 저장하기</label>
+                    <div class="signup">
+                        <span><a href="./">회원가입</a></span>
+                        <span>|</span>
+                        <span><a href="./">ID / PW 찾기</a></span>
+                    </div>
+                </div>
+                <div class="login-sns">
+                    <button><img src="images/naver.png" alt="naver"></button>
+                    <button><img src="images/kakaotalk.png" alt="kakaotalk"></button>
+                    <button><img src="images/facebook.png" alt="facebook"></button>
+                </div>
+            </form>
         </div>
 
 
@@ -305,6 +322,10 @@
             <p>Copyright© 2019 SEONGNAM ARTS CENTER. All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- 로그인, 로그아웃 -->
+    <script src="js/greeting.js"></script>
+    
 </body>
 
 </html>

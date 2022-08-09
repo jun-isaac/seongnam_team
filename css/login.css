@@ -1,0 +1,65 @@
+.hidden {
+	display: none;
+}
+
+#toggle-menu p {
+	position: absolute;
+	font-size: 22px;
+	font-weight: 500;
+	left: 239px;
+	top: 103px;
+}
+
+.profile-img {
+	position: absolute;
+	display: block;
+	left: 150px;
+	top: 78px;
+}
+
+#logout {
+	position: absolute;
+	right: 15px;
+	top: 11px;
+	padding: 5px 15px;
+	border: 0.5px solid #CCCCCC
+}
+
+
+.academy {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 0px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	border-right: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cancel {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 187px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	border-right: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.check {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 372px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
