@@ -1,0 +1,344 @@
+/* #main-home--------- */
+#main-home {
+    width: 100%;
+    height: 300vh;
+    position: relative;
+}
+
+#main-home .left-curtain {
+    width: 60vw;
+    height: 100%;
+    background-color: #111;
+    position: relative;
+}
+
+#main-home .left-curtain .title-ment {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    margin-top: 400px;
+    margin-left: 300px;
+}
+
+#main-home .left-curtain .title-ment h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+#main-home .right-curtain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 100%;
+    background-color: #111;
+}
+
+
+/* 툴박스 */
+#tool-zone {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: 1s;
+}
+
+#tool-zone.on {
+    opacity: 1;
+    transition: 1s;
+}
+
+#tool-zone .container {
+    position: relative;
+}
+
+#tool-zone .container .tool-wrap {
+    position: absolute;
+    width: 50px;
+    height: 186px;
+    right: 36px;
+    bottom: 144px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tool-zone .container .tool-wrap>li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* 검색바 */
+#tool-zone .container .tool-wrap .search {
+    transition: .5s;
+}
+
+#tool-zone .container .tool-wrap .search.on {
+    width: 20vw;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+#tool-zone .container .tool-wrap .search-bar {
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    opacity: 0;
+    transform: translateX(200%);
+    transition-duration: .5s;
+}
+
+#tool-zone .container .tool-wrap .search-bar.on {
+    transition-duration: .5s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#tool-zone .container .tool-wrap .search-bar input {
+    width: 20vw;
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    padding-left: 30px;
+}
+
+/* 블러필터 */
+.blur-filter {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh + 101px);
+    backdrop-filter: blur(10px);
+    /* filter: blur(5px); */
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+.main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*  공연 */
+#show {
+    width: 100%;
+    /* 101px은 .main-title의 높이값임 */
+    height: calc(100vh + 101px);
+    padding-top: 101px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+#show .swiper {
+    width: 80%;
+    height: 80%;
+}
+
+
+
+/* 전시 */
+#exhibition {
+    width: 100%;
+    /* 101px은 .main-title의 높이값임 */
+    height: calc(100vh + 101px);
+    padding-top: 101px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#exhibition .ex-gallery {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    background-color: pink;
+}
+#exhibition .ex-gallery .imgbox {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    outline: 3px solid red;
+}
+#exhibition .ex-gallery .imgbox img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+#exhibition .ex-gallery .img-1 {
+    top: 20px;
+    left: 100px;
+}
+#exhibition .ex-gallery .img-2 {
+    top: 50px;
+    left: 300px;
+}
+#exhibition .ex-gallery .img-3 {
+    top: 10px;
+    left: 50px;
+}
+#exhibition .ex-gallery .img-4 {
+    top: 60px;
+    left: 500px;
+}
+#exhibition .ex-gallery .img-5 {
+    top: 100px;
+    left: 900px;
+}
+
+/* 대관안내 */
+#rental {
+    width: 100%;
+    /* 101px은 .main-title의 높이값임 */
+    height: calc(100vh + 101px);
+    padding-top: 101px;
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+}
+
+
+#rental .ex-gallery {
+    width: 80%;
+    height: 80%;
+    
+    background-color: pink;
+}
+
+/* 대관안내 */
+#info {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#info .ex-gallery {
+    width: 80%;
+    height: 80%;
+    
+    background-color: pink;
+}
+
+
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px) {
+
+    /* #main-home--------- */
+    #main-home .left-curtain {
+        width: 100vw;
+        height: 100%;
+        background-color: #111;
+        position: relative;
+    }
+
+    #main-home .left-curtain .title-ment {
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-size: 40px;
+
+        margin-top: 200px;
+        margin-left: 20px;
+    }
+
+    #main-home .right-curtain {
+        display: none;
+    }
+
+
+    /* 툴박스 */
+    #tool-zone .container .tool-wrap {
+        position: absolute;
+        width: 25px;
+        height: 93px;
+        right: 27px;
+        bottom: 144px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #tool-zone .container .tool-wrap>li {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #tool-zone .container .tool-wrap > li img {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* 검색바 */
+    #tool-zone .container .tool-wrap .search {
+        transition: .5s;
+    }
+
+    #tool-zone .container .tool-wrap .search.on {
+        width: 20vw;
+        border-radius: 50px;
+        transition: .5s;
+    }
+
+    #tool-zone .container .tool-wrap .search-bar {
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        opacity: 0;
+        transform: translateX(200%);
+        transition-duration: .5s;
+    }
+
+    #tool-zone .container .tool-wrap .search-bar.on {
+        transition-duration: .5s;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #tool-zone .container .tool-wrap .search-bar input {
+        width: 20vw;
+        height: 50px;
+        border-style: none;
+        border-radius: 50px;
+        padding-left: 30px;
+    }
+
+}

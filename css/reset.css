@@ -1,0 +1,94 @@
+:root {
+    --header-height: 100px;
+    --header-height-m: 60px;
+    --main-color: #000066;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border-style: none;
+    background-color: transparent;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 70px;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.container {
+    /* outline: 5px solid red; */
+    width: 1440px;
+    margin: 0 auto;
+}
+
+#login-btn {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-style: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.login-sns > button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.login-sns > button:hover {
+    background-color: #ccc;
+}
+
+
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px) {
+
+   .container {
+        width: 375px;
+        margin: 0 auto;
+   }
+
+   #login-btn {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-style: none;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+}
+#login-btn > img {
+    width: 35px;
+}
+
+}

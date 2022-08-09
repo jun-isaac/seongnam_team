@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성남아트센터</title>
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- 모바일버전 js코드 -->
+    <script media="screen and (max-width: 375px)" src="js/app_mobile.js"></script>
+    <script src="js/main-header.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./">
+                    <img src="images/logo.png" alt="LOGO">
+                </a>
+            </div>
+            <nav id="header-gnb">
+                <ul class="gnb">
+                    <li><a href="#show">공연</a>
+                        <ul class="sub">
+                            <li><a href="./">추천공연</a></li>
+                            <li><a href="./">월간공연</a></li>
+                            <li><a href="./">연간공연</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#exhibition">전시</a>
+                        <ul class="sub">
+                            <li><a href="./">추천전시</a></li>
+                            <li><a href="./">월간전시</a></li>
+                            <li><a href="./">연간전시</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#rental">대관안내</a>
+
+                    </li>
+                    <li><a href="company.html">센터소개</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div id="toggle-menu-btn">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div id="toggle-menu">
+        <div class="login-section">
+            <div class="login-box">
+                <input type="text" placeholder="아이디">
+                <input type="text" placeholder="비밀번호">
+                <button id="login-btn">
+                    <img src="images/login-btn.png" alt="login-btn">
+                </button>
+            </div>
+            <div class="login-info">
+
+                <label for="idsave"><input type="checkbox" id="idsave"> 아이디 저장하기</label>
+                <div class="signup">
+                    <span><a href="./">회원가입</a></span>
+                    <span>|</span>
+                    <span><a href="./">ID / PW 찾기</a></span>
+                </div>
+            </div>
+            <div class="login-sns">
+                <button><img src="images/naver.png" alt="naver"></button>
+                <button><img src="images/kakaotalk.png" alt="kakaotalk"></button>
+                <button><img src="images/facebook.png" alt="facebook"></button>
+            </div>
+        </div>
+
+
+        <ul id="toggle-gnb">
+            <li><a href="./">공연</a>
+                <button class="gnb-plus"><img src="images/gnb-plus.png" alt="gnb-plus"></button>
+                <ul class="sub">
+                    <li><a href="./">추천공연</a></li>
+                    <li><a href="./">월간공연</a></li>
+                    <li><a href="./">연간공연</a></li>
+                </ul>
+            </li>
+            <li><a href="./">전시</a>
+                <button class="gnb-plus"><img src="images/gnb-plus.png" alt="gnb-plus"></button>
+                <ul class="sub">
+                    <li><a href="./">추천전시</a></li>
+                    <li><a href="./">월간전시</a></li>
+                    <li><a href="./">연간전시</a></li>
+                </ul>
+            </li>
+            <li><a href="./">대관안내</a>
+
+            </li>
+            <li><a href="company.html">센터소개</a>
+
+            </li>
+            <li><a href="./">고객센터</a>
+                <button class="gnb-plus"><img src="images/gnb-plus.png" alt="gnb-plus"></button>
+                <ul class="sub">
+                    <li><a href="./">예매안내</a></li>
+                    <li><a href="./">공지사항</a></li>
+                    <li><a href="./">자주 묻는 질문</a></li>
+                    <li><a href="./">고객의 소리</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+    <section id="background-youtube">
+        <!-- ?rel=0&autoplay=1&mute=1&loop=1&playlist=영상키값 을 꼭 붙여주기 -->
+        <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/FIo-uXEAtGE?rel=0&autoplay=1&mute=1&loop=1&playlist=FIo-uXEAtGE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <div id="tool-zone">
+        <div class="container">
+            <ul class="tool-wrap">
+                <li><img src="images/kakaotalk.png" alt="카카오톡 상담하기"></li>
+                <li class="search"><img src="images/search.png" alt="검색"></li>
+                <div class="search-bar"><input type="text" placeholder="검색"></div>
+                <li class="top"><img src="images/top.png" alt="상단으로이동"></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <main id="main-home">
+
+        <div class="left-curtain">
+            <div class="title-ment">
+                <h1>성남아트센터</h1>
+                <h2>What's ON</h2>
+            </div>
+        </div>
+        <div class="right-curtain">
+
+        </div>
+
+    </main>
+
+    <main id="show">
+        <div class="main-title">
+            <h1>공연</h1>
+        </div>
+        <div class="blur-filter"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/show-banner1.png" alt="show-banner1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/show-banner2.jpeg" alt="show-banner2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" alt="show-banner3">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </main>
+
+    <main id="exhibition">
+        <div class="main-title">
+            <h1>전시</h1>
+        </div>
+        <div class="blur-filter"></div>
+        <section class="ex-gallery">
+            <div class="imgbox img-1">
+                <img src="images/pd01a1.jpg" alt="">
+            </div>
+            <div class="imgbox img-2">
+                <img src="" alt="">
+            </div>
+            <div class="imgbox img-3">
+                <img src="" alt="">
+            </div>
+            <div class="imgbox img-4">
+                <img src="" alt="">
+            </div>
+            <div class="imgbox img-5">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+
+    <main id="rental">
+        <div class="main-title">
+            <h1>대관안내</h1>
+        </div>
+        <main id="slider">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+
+            <label for="s1" id="slide1">
+                <img src="images/concert.png" alt="콘서트홀">
+                <div class="click-modal">
+                    <p>콘서트홀<br><span><a href="#">자세히 보기</a></span></p>
+                </div>
+            </label>
+            <label for="s2" id="slide2">
+                <img src="images/ensemble.png" alt="앙상블시어터">
+                <div class="click-modal">
+                    <p>앙상블 시어터 <br><span><a href="#">자세히 보기</a></span></p>
+                </div>
+            </label>
+            <label for="s3" id="slide3">
+                <img src="images/opera.png" alt="오페라하우스">
+                <div class="click-modal">
+                    <p>오페라하우스<br><span><a href="#">자세히 보기</a></span></p>
+                </div>
+            </label>
+
+        </main>
+        <div class="blur-filter"></div>
+        <section class="ex-gallery">
+
+        </section>
+    </main>
+
+    <main id="info">
+
+        <div class="blur-filter"></div>
+        <section class="ex-gallery">
+
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="logo">
+            <a href="./"><img src="images/footer_logo.png" alt="성남아트센터"></a>
+        </div>
+        <div class="secret">
+            <a href="./"><span>개인정보취급방침</span></a>
+            <a href="./"><span class="ccc">영상정보처리기기 운영&#47;관리 방침
+                </span></a>
+            <a href="./"><span class="ccc">이메일무단수집거부</span></a>
+            <a href="./"><span class="ccc">저작권보호정책</span></a>
+            <span class="ccc">예매전용 1544-8117</span>
+        </div>
+        <div class="address">
+            <p>재단법인 성남문화재단 (13514) 경기도 성남시 분당구 성남대로 808 (야탑동) 전화 : 031-783-8000 팩스 : 031-783-8160</p>
+        </div>
+        <div id="line"></div>
+        <div class="sns">
+            <div class="sns-pro">
+                <a href="https://www.instagram.com/seongnam_artscenter/" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="images/instagram.png" alt="instagram" id="insta"></a>
+                <a href="https://www.youtube.com/user/snartscenter" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="images/youtube.png" alt="youtube" id="youtube"></a>
+                <a id="kakao" href="https://pf.kakao.com/_rdAfxl" target="_blank"
+                    rel="noopener noreferrer nofollow"><img src="images/kakao.png" alt="kakaotalk" id="kakaotalk"></a>
+                <a href="https://blog.naver.com/snartc" target="_blank" rel="noopener noreferrer nofollow"><img
+                        src="images/navrer.png" alt="naver" id="naver"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>사업자등록번호 129-82-07974 통신판매업신고 제2006-경기성남-674호</p>
+            <p>Copyright© 2019 SEONGNAM ARTS CENTER. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+
+
+/* 헤더와 푸터 백그라운드동영상 */
+/* 헤더 */
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    z-index: 10;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#header .container {
+    height: var(--header-height);
+    position: relative;
+}
+
+#header .container .logo {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 28px;
+}
+
+#header .container #header-gnb {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 531px;
+
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 헤더 gnb */
+#header-gnb .gnb {
+    display: flex;
+    text-align: center;
+    width: 694px;
+}
+
+.gnb>li {
+    width: 25%;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+}
+
+.gnb>li:hover {
+    background-color: #000;
+    /* color: var(--main-color); */
+}
+
+.gnb>li>a {
+    display: block;
+}
+
+.gnb>li>.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: #000;
+}
+
+.gnb>li>.sub>li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.gnb>li>.sub>li:hover a {
+    background-color: rgba(102, 102, 102, 0.5);
+    /* color: var(--main-color); */
+}
+
+.gnb>li>.sub>li>a {
+    display: block;
+}
+
+/* 헤더 토글버튼 */
+#toggle-menu-btn {
+    position: absolute;
+    right: 33px;
+    top: 33px;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* 헤더 토글메뉴 */
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+#toggle-menu {
+    position: absolute;
+    right: 0;
+    top: var(--header-height);
+    width: 600px;
+    height: 130vh;
+    background-color: #fff;
+    /* 많이축소하면 보임 ㅎㅎ.. */
+    transform: translateX(200%);
+    transition: .5s;
+    z-index: 9;
+}
+
+#toggle-menu.on {
+    display: block;
+    transform: translateX(0);
+    /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */
+}
+
+/* 토글메뉴 로그인섹션 */
+#toggle-menu .login-section {
+    position: relative;
+    width: 560px;
+    height: 300px;
+    margin-top: 9px;
+    margin: 9px auto;
+    border: .5px solid #333;
+    /* padding 상 우 하 좌 */
+    padding: 50px 105px 20px 105px;
+    color: #000;
+    font-size: 14px;
+}
+
+#toggle-menu .login-section .login-box input {
+    display: block;
+    margin-bottom: 10px;
+    border: .3px solid black;
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+#toggle-menu .login-section .login-box #login-btn {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+}
+
+#toggle-menu .login-section .login-info {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toggle-menu .login-section .login-sns {
+    margin: 40px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 토글메뉴의 메뉴 */
+#toggle-menu #toggle-gnb {
+    color: #000;
+    background-color: #fff;
+    width: 560px;
+    font-size: 24px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#toggle-gnb>li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+#toggle-gnb>li .gnb-plus {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#toggle-gnb>li>a {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    display: block;
+}
+
+#toggle-gnb>li>a:hover {
+    background-color: #eaeaea;
+}
+
+#toggle-gnb>li>.sub {
+    width: 100%;
+    background-color: #eaeaea;
+
+    display: none;
+}
+
+#toggle-gnb>li>.sub>li {
+    margin: 0 auto;
+    width: 90%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid black;
+}
+
+#toggle-gnb>li>.sub>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#toggle-gnb>li>.sub>li>a {
+    background-color: #eaeaea;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 245px;
+    background: #000;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Noto Sans Korean", sans-serif;
+    font-size: 14px;
+    /*피그마와 같이주면 1000픽셀쯤부터 찌그러짐.*/
+    /*padding: 0 355px;*/
+}
+
+footer .logo {
+    display: none;
+}
+
+footer .secret {
+    padding: 25px 0 20px 0;
+    font-weight: 500;
+}
+
+footer .secret span {
+    padding-left: 25px;
+}
+
+footer .secret .ccc {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .address p {
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+footer .sns-pro img {
+    padding: 0 0 25.5px 20px;
+}
+
+footer .copyright {
+    font-weight: 400;
+    line-height: 23px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+/* 모바일 레이아웃 */
+@media only screen and (max-width: 375px) {
+
+    /* 헤더 */
+    #header {
+        height: var(--header-height-m);
+    }
+
+    #header .container {
+        position: relative;
+    }
+
+    #header .container .logo {
+        position: absolute;
+    }
+
+    #header .container .logo img {
+        width: 68px;
+    }
+
+    #header-gnb {}
+
+    /* 헤더 토글버튼 */
+    #toggle-menu-btn {
+        position: absolute;
+        right: 23px;
+        top: 15px;
+    }
+
+    .hamburger .line {
+        width: 24px;
+        height: 2px;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* 헤더 토글메뉴 */
+    #toggle-menu {
+        position: absolute;
+        right: 0;
+        top: var(--header-height-m);
+        width: 375px;
+        height: 130vh;
+        background-color: #fff;
+        /* 많이축소하면 보임 ㅎㅎ.. */
+        transform: translateY(-200%);
+        transition: .5s;
+        z-index: 9;
+    }
+
+    #toggle-menu.on {
+        display: block;
+        transform: translatey(0);
+        /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */
+    }
+
+    /* 토글메뉴 로그인섹션 */
+    #toggle-menu .login-section {
+        position: relative;
+        width: 100%;
+        height: 182px;
+        border: .5px solid #333;
+        /* padding 상 우 하 좌 */
+        padding: 30px 57px 20px 57px;
+        font-size: 10px;
+    }
+
+    #toggle-menu .login-section .login-box input {
+        display: block;
+        margin-bottom: 9px;
+        border: .3px solid black;
+        width: 192px;
+        height: 24px;
+        padding-left: 20px;
+    }
+
+    #toggle-menu .login-section .login-box #login-btn {
+        position: absolute;
+        top: 30px;
+        right: 57px;
+    }
+
+    #toggle-menu .login-section .login-info {
+        margin-top: 11px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #toggle-menu .login-section .login-sns {
+        margin: 19px auto;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 토글메뉴의 메뉴 */
+    #toggle-menu #toggle-gnb {
+        color: #000;
+        background-color: #fff;
+        width: 315px;
+        font-size: 20px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    #toggle-gnb>li {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    #toggle-gnb>li .gnb-plus {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    #toggle-gnb>li>a {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+    }
+
+    #toggle-gnb>li>a:hover {
+        background-color: #eaeaea;
+    }
+
+    #toggle-gnb>li>.sub {
+        width: 100%;
+        background-color: #eaeaea;
+
+        display: none;
+    }
+
+    #toggle-gnb>li>.sub>li {
+        margin: 0 auto;
+        width: 90%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid black;
+    }
+
+    #toggle-gnb>li>.sub>li>a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #toggle-gnb>li>.sub>li>a {
+        background-color: #eaeaea;
+        color: #fff;
+    }
+
+
+
+
+
+
+
+    /* 푸터 */
+    footer {
+        width: 100%;
+        height: 383px;
+        background: #000;
+        color: #fff;
+        margin: 0 auto;
+        padding: 20px;
+        /*text-align: left;*/
+        font-family: "Noto Sans Korean", sans-serif;
+        font-size: 12px;
+    }
+
+    footer .logo img {
+        width: 80px;
+    }
+
+    footer .secret {
+        padding: 20px 0 25px 0;
+        font-weight: 500;
+    }
+
+    footer .secret span {
+        padding-right: 10px;
+        /*font-size: 12px;*/
+    }
+
+    footer .secret .ccc {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    footer .address p {
+        font-weight: 400;
+        padding-bottom: 35px;
+        /*font-size: 16px;*/
+    }
+
+    footer #line {
+        border-bottom: 1px solid;
+    }
+
+    footer .sns {
+        padding-top: 20px;
+    }
+
+    footer .sns-pro {
+        text-align: center;
+    }
+
+    footer .sns-pro img {
+        padding: 0 20px 25.5px 0;
+    }
+
+    footer .copyright {
+        font-weight: 400;
+        /*line-height: 23px;*/
+        padding-bottom: 30px;
+        font-size: 10px;
+    }
+}
