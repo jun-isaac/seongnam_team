@@ -50,13 +50,13 @@
 ------------------
 ## 메인페이지
 
-<img src="images/welcome.gif" width="1000">
+<img src="images/welcome.gif" width="850">
 
 ### 사용자를 환영하는 시작페이지
 - 사이트에 접속하면 방문자를 환영하는 문구가 나타나고 스크롤을 내리면 좌우로 사라지며 백그라운드 동영상이 무한재생됩니다.
 
 
-<img src="images/rental.gif" width="1000">
+<img src="images/rental.gif" width="850">
 
 ### 대관페이지
 - 대관 할 수 있는 공연장을 slde 형태로 확인 가능합니다.
@@ -64,7 +64,7 @@
 -------------------
 ## 로그인 창
 
-<img src="login-logout.gif" width="1000">
+<img src="images/login-logout.gif" width="850">
  
 - 로그인시 아이디가 localstorage에 저장 됩니다.
 - 로그아웃 버튼을 누르기 전까지 데이터가 저장되어 있다가 로그아웃 버튼을 누르면 데이터가 삭제 되면서 logout 됩니다.
