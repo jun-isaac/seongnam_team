@@ -8,6 +8,7 @@ const USERNAME_KEY = "username";
 // 로그아웃 버튼 지정
 const button = document.querySelector('#logout');
 
+
 // 로컬 저장공간에 아이디 저장
 function onLoginSubmit(event) {
 	event.preventDefault();
@@ -23,6 +24,9 @@ button.addEventListener('click', () => {
 	/* 로컬 데이터 삭제 */
 	localStorage.removeItem('username');
 });
+
+
+
 
 // profile 사진 + 인사말 추가
 function paintGreeting(username) {
