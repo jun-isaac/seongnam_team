@@ -32,7 +32,7 @@
 
 #header .container #header-gnb {
     position: absolute;
-    margin-top: 30px;
+    top: 0px;
     margin-left: 531px;
 
     color: #fff;
@@ -51,7 +51,7 @@
 .gnb>li {
     width: 25%;
     height: 70px;
-    line-height: 70px;
+    line-height: 100px;
     position: relative;
 }
 
@@ -89,7 +89,7 @@
 #toggle-menu-btn {
     position: absolute;
     right: 33px;
-    top: 33px;
+    top: 28px;
 }
 
 .hamburger .line {
@@ -404,7 +404,8 @@ footer .copyright {
         width: 68px;
     }
 
-    #header-gnb {}
+    #header-gnb {
+    }
 
     /* 헤더 토글버튼 */
     #toggle-menu-btn {

@@ -18,6 +18,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
     <script src="js/app.js"></script>
     <!-- 모바일버전 js코드 -->
     <script media="screen and (max-width: 375px)" src="js/app_mobile.js"></script>
@@ -149,7 +155,7 @@
     <section id="background-youtube">
         <!-- ?rel=0&autoplay=1&mute=1&loop=1&playlist=영상키값 을 꼭 붙여주기 -->
         <iframe width="100%" height="100%"
-            src="https://www.youtube.com/embed/FIo-uXEAtGE?rel=0&autoplay=1&mute=1&loop=1&playlist=FIo-uXEAtGE"
+            src="https://www.youtube.com/embed/FIo-uXEAtGE?rel=0&autoplay=1&mute=1&loop=1&playlist=FIo-uXEAtGE&controls=0"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
@@ -193,13 +199,13 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="images/show-banner1.png" alt="show-banner1">
+                    <img src="images/pd01b1.jpg" alt="show-banner1">
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/show-banner2.jpeg" alt="show-banner2">
+                    <img src="images/pd01b2.jpg" alt="show-banner2">
                 </div>
                 <div class="swiper-slide">
-                    <img src="" alt="show-banner3">
+                    <img src="images/pd01b3.jpg" alt="show-banner3">
                 </div>
 
             </div>
@@ -209,9 +215,6 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
 
     </main>
@@ -222,20 +225,55 @@
         </div>
         <div class="blur-filter"></div>
         <section class="ex-gallery">
-            <div class="imgbox img-1">
-                <img src="images/pd01a1.jpg" alt="">
+            <div class="imgbox img-1 img-odd" data-aos="fade-right">
+                <img src="images/전시01.jpg" alt="">
+                <div class="ex-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur sunt veniam dolores,
+                        dignissimos ipsam quaerat voluptate unde voluptatum, accusantium rem similique officiis nesciunt
+                        quas, dicta cupiditate obcaecati delectus architecto! Facere ex soluta voluptates, corporis
+                        repudiandae facilis est laboriosam nesciunt molestias quasi ad. Nesciunt fuga officiis maiores
+                        quia animi tenetur?</p>
+                </div>
             </div>
-            <div class="imgbox img-2">
-                <img src="" alt="">
+            <div class="imgbox img-2 img-even" data-aos="fade-left">
+                <img src="images/전시02.jpg" alt="">
+                <div class="ex-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur sunt veniam dolores,
+                        dignissimos ipsam quaerat voluptate unde voluptatum, accusantium rem similique officiis nesciunt
+                        quas, dicta cupiditate obcaecati delectus architecto! Facere ex soluta voluptates, corporis
+                        repudiandae facilis est laboriosam nesciunt molestias quasi ad. Nesciunt fuga officiis maiores
+                        quia animi tenetur?</p>
+                </div>
             </div>
-            <div class="imgbox img-3">
-                <img src="" alt="">
+            <div class="imgbox img-3 img-odd" data-aos="fade-right">
+                <img src="images/전시03.jpg" alt="">
+                <div class="ex-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur sunt veniam dolores,
+                        dignissimos ipsam quaerat voluptate unde voluptatum, accusantium rem similique officiis nesciunt
+                        quas, dicta cupiditate obcaecati delectus architecto! Facere ex soluta voluptates, corporis
+                        repudiandae facilis est laboriosam nesciunt molestias quasi ad. Nesciunt fuga officiis maiores
+                        quia animi tenetur?</p>
+                </div>
             </div>
-            <div class="imgbox img-4">
-                <img src="" alt="">
+            <div class="imgbox img-4 img-even" data-aos="fade-left">
+                <img src="images/전시04.jpg" alt="">
+                <div class="ex-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur sunt veniam dolores,
+                        dignissimos ipsam quaerat voluptate unde voluptatum, accusantium rem similique officiis nesciunt
+                        quas, dicta cupiditate obcaecati delectus architecto! Facere ex soluta voluptates, corporis
+                        repudiandae facilis est laboriosam nesciunt molestias quasi ad. Nesciunt fuga officiis maiores
+                        quia animi tenetur?</p>
+                </div>
             </div>
-            <div class="imgbox img-5">
-                <img src="" alt="">
+            <div class="imgbox img-5 img-odd" data-aos="fade-right">
+                <img src="images/전시05.jpg" alt="">
+                <div class="ex-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur sunt veniam dolores,
+                        dignissimos ipsam quaerat voluptate unde voluptatum, accusantium rem similique officiis nesciunt
+                        quas, dicta cupiditate obcaecati delectus architecto! Facere ex soluta voluptates, corporis
+                        repudiandae facilis est laboriosam nesciunt molestias quasi ad. Nesciunt fuga officiis maiores
+                        quia animi tenetur?</p>
+                </div>
             </div>
         </section>
     </main>
@@ -244,7 +282,8 @@
         <div class="main-title">
             <h1>대관안내</h1>
         </div>
-        <main id="slider">
+        <div class="blur-filter"></div>
+        <section id="slider">
             <input type="radio" name="slider" id="s1" checked>
             <input type="radio" name="slider" id="s2">
             <input type="radio" name="slider" id="s3">
@@ -268,7 +307,7 @@
                 </div>
             </label>
 
-        </main>
+        </section>
         <div class="blur-filter"></div>
         <section class="ex-gallery">
 
@@ -278,8 +317,35 @@
     <main id="info">
 
         <div class="blur-filter"></div>
-        <section class="ex-gallery">
-
+        <section class="info-gallery">
+            <div class="info-wrap">
+                <a href="./">
+                    <img src="images/info_show.png" alt="공연장 소개">
+                    <div class="opacity-filter"></div>
+                    <h3>공연장소개</h3>
+                </a>
+            </div>
+            <div class="info-wrap">
+                <a href="./">
+                    <img src="images/info_floor.png" alt="층별안내">
+                    <div class="opacity-filter"></div>
+                    <h3>층별안내</h3>
+                </a>
+            </div>
+            <div class="info-wrap">
+                <a href="./">
+                    <img src="images/info_seat.png" alt="좌석안내">
+                    <div class="opacity-filter"></div>
+                    <h3>좌석안내</h3>
+                </a>
+            </div>
+            <div class="info-wrap">
+                <a href="company.html">
+                    <img src="images/info_map.png" alt="오시는 길">
+                    <div class="opacity-filter"></div>
+                    <h3>오시는 길</h3>
+                </a>
+            </div>
         </section>
     </main>
 

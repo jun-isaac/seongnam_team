@@ -130,12 +130,13 @@
     left: 0;
     position: absolute;
     width: 100%;
-    height: calc(100vh + 101px);
+    height: calc(100vh + 200px);
     backdrop-filter: blur(10px);
     /* filter: blur(5px); */
     background-color: rgba(0, 0, 0, .5);
     z-index: -1;
 }
+
 .main-title {
     position: absolute;
     top: 0;
@@ -159,8 +160,8 @@
 #show {
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
-    height: calc(100vh + 101px);
-    padding-top: 101px;
+    height: calc(100vh + 200px);
+    padding-top: 200px;
 
     display: flex;
     align-items: center;
@@ -205,13 +206,13 @@
     width: 80%;
     height: 80%;
     position: relative;
-    background-color: pink;
+    /* background-color: pink; */
 }
 #exhibition .ex-gallery .imgbox {
     position: absolute;
     width: 40vw;
     height: 400px;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     display: flex;
     justify-content: space-between;
 }
@@ -241,14 +242,19 @@
     left: 0;
 }
 
+#exhibition .ex-gallery .img-even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /* 대관안내 */
 #rental {
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
-    height: calc(100vh + 101px);
+    height: calc(100vh + 200px);
     /* padding-top: 200px; */
 
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -271,6 +277,7 @@
     align-items: center;
     justify-content: center;
 }
+
 #rental .rental-gallery {
     width: 80%;
     height: 80%;
@@ -652,6 +659,7 @@
 
     overflow: hidden;
 }
+
 #rental > .main-title {
     position: absolute;
     top: 0;
@@ -668,6 +676,7 @@
     align-items: center;
     justify-content: center;
 }
+
 #rental .rental-gallery {
     width: 80%;
     height: 80%;
