@@ -77,6 +77,17 @@
     align-items: center;
 }
 
+#tool-zone .container .tool-wrap>li a {
+    width: 40px;
+    height: 40px;
+}
+
+#tool-zone .container .tool-wrap>li a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 
 /* 검색바 */
@@ -130,12 +141,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 101px;
-    background-color: #000;
+    height: 200px;
+    /* line-height: 200px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(5px); */
     color: #fff;
     text-align: center;
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.main-title h1 {}
 
 /*  공연 */
 #show {
@@ -155,21 +173,33 @@
     height: 80%;
 }
 
+#show .swiper .swiper-wrapper{
+
+}
+#show .swiper .swiper-wrapper .swiper-slide {
+
+}
+#show .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+
 
 
 /* 전시 */
 #exhibition {
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
-    height: calc(100vh + 101px);
-    padding-top: 101px;
+    height: calc(330vh + 200px);
+    padding-top: 200px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-
+#exhibition > .blur-filter {
+    height: calc(330vh + 200px);
+}
 
 #exhibition .ex-gallery {
     width: 80%;
@@ -179,9 +209,11 @@
 }
 #exhibition .ex-gallery .imgbox {
     position: absolute;
-    width: 200px;
+    width: 40vw;
     height: 400px;
     outline: 3px solid red;
+    display: flex;
+    justify-content: space-between;
 }
 #exhibition .ex-gallery .imgbox img {
     /* width: 100%; */
@@ -189,24 +221,24 @@
 }
 
 #exhibition .ex-gallery .img-1 {
-    top: 20px;
-    left: 100px;
+    top: 0;
+    left: 0;
 }
 #exhibition .ex-gallery .img-2 {
-    top: 50px;
-    left: 300px;
+    top: 400px;
+    right: 0;
 }
 #exhibition .ex-gallery .img-3 {
-    top: 10px;
-    left: 50px;
+    top: 800px;
+    left: 0;
 }
 #exhibition .ex-gallery .img-4 {
-    top: 60px;
-    left: 500px;
+    top: 1200px;
+    right: 0;
 }
 #exhibition .ex-gallery .img-5 {
-    top: 100px;
-    left: 900px;
+    top: 1600px;
+    left: 0;
 }
 
 /* 대관안내 */
@@ -214,7 +246,7 @@
     width: 100%;
     /* 101px은 .main-title의 높이값임 */
     height: calc(100vh + 101px);
-    padding-top: 101px;
+    /* padding-top: 200px; */
 
     /* display: flex; */
     align-items: center;
@@ -223,15 +255,148 @@
     z-index: 999;
 }
 
-
-#rental .ex-gallery {
+#rental > .main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    /* line-height: 200px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(5px); */
+    color: #fff;
+    text-align: center;
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rental .rental-gallery {
     width: 80%;
     height: 80%;
-    
-    background-color: pink;
+}
+#rental .rental-gallery {
+	position: relative;
+	font-family: 'Helvetica Neue', sans-serif;
+	perspective: 1400px;
+	transform-style: preserve-3d;
 }
 
-/* 대관안내 */
+#rental .rental-gallery input[type=radio] {
+	position: relative;
+	top: 60%;
+	left: 60%;
+	width: 18px;
+	height: 18px;
+	margin: 0 15px 0 0;
+	opacity: 0;
+	transform: translateX(-83px);
+	cursor: pointer;
+}
+
+
+#rental .rental-gallery input[type=radio]:nth-child(3) {
+	margin-right: 0px;
+}
+
+#rental .rental-gallery input[type=radio]:checked {
+	opacity: 0;
+    display: none;
+}
+
+
+#rental .rental-gallery label,
+#rental .rental-gallery label img {
+	position: absolute;
+	/* width: 380px;
+	height: 800px; */
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 400ms ease;
+}
+#rental .rental-gallery label {
+    width: 226px;
+    height: 475px;
+    top: 10%;
+    left: 40%;
+    /* transform: translateX(-50%); */
+}
+#rental .rental-gallery label img {
+    width: 226px;
+    height: 475px;
+}
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3 {
+	box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+	transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide1 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(70%, 0, -100px);
+}
+
+/* Previous Slide */
+#s1:checked~#slide3,
+#s2:checked~#slide1,
+#s3:checked~#slide2 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(-70%, 0, -100px);
+}
+
+.click-modal {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	/* outline: 4px solid green; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6)
+}
+
+.click-modal a {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.click-modal a:hover {
+	background: #fff;
+	color: black;
+}
+
+.click-modal > p {
+	font-size: 1vw;
+    text-align: center;
+}
+
+.click-modal span {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+}
+
+
+/* info */
 #info {
     width: 100%;
     height: 100vh;
@@ -243,12 +408,57 @@
 }
 
 
-#info .ex-gallery {
-    width: 80%;
+#info .info-gallery {
+    width: 90%;
     height: 80%;
-    
-    background-color: pink;
+
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
 }
+#info .info-gallery .info-wrap {
+    width: 20%;
+    height: 80%;
+    background-color: #000;
+}
+#info .info-gallery .info-wrap a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#info .info-gallery .info-wrap a img {
+    width: 100%;
+    height: 100%;
+}
+#info .info-gallery .info-wrap a:hover .opacity-filter,
+#info .info-gallery .info-wrap a:hover img{
+    transition: .5s;
+    transform: scale(1.2);
+    
+}
+#info .info-gallery .info-wrap a .opacity-filter {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#info .info-gallery .info-wrap a h3 {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
 
 
 /* 모바일 레이아웃 */
@@ -302,10 +512,15 @@
     }
 
 
-    #tool-zone .container .tool-wrap > li img {
+    #tool-zone .container .tool-wrap>li a {
         width: 17px;
         height: 17px;
     }
+    #tool-zone .container .tool-wrap>li img {
+        width: 17px;
+        height: 17px;
+    }
+
 
     /* 검색바 */
     #tool-zone .container .tool-wrap .search {
@@ -340,5 +555,304 @@
         border-radius: 50px;
         padding-left: 30px;
     }
+
+    .main-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        /* line-height: 200px; */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* filter: blur(5px); */
+        color: #fff;
+        text-align: center;
+        /* z-index: -1; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-title h1 {
+        font-size: 30px;
+    }
+
+
+
+    /* 전시 */
+    #exhibition {
+        width: 100%;
+        /* 101px은 .main-title의 높이값임 */
+        height: calc(100vh + 200px);
+        padding-top: 200px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+
+    #exhibition .ex-gallery {
+        width: 80%;
+        height: 80%;
+        position: relative;
+        background-color: pink;
+    }
+
+    #exhibition .ex-gallery .imgbox {
+        position: absolute;
+        width: 20px;
+        height: 40px;
+        outline: 3px solid red;
+    }
+
+    #exhibition .ex-gallery .imgbox img {
+        /* width: 100%; */
+        height: 100%;
+    }
+
+    #exhibition .ex-gallery .img-1 {
+        top: 20px;
+        left: 0;
+    }
+
+    #exhibition .ex-gallery .img-2 {
+        top: 50px;
+        left: 0;
+    }
+
+    #exhibition .ex-gallery .img-3 {
+        top: 10px;
+        left: 0;
+    }
+
+    #exhibition .ex-gallery .img-4 {
+        top: 60px;
+        left: 0;
+    }
+
+    #exhibition .ex-gallery .img-5 {
+        top: 100px;
+        left: 0px;
+    }
+
+
+    /* 대관안내 */
+#rental {
+    width: 100%;
+    /* 101px은 .main-title의 높이값임 */
+    height: calc(100vh + 200px);
+    /* padding-top: 200px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    overflow: hidden;
+}
+#rental > .main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    /* line-height: 200px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* filter: blur(5px); */
+    color: #fff;
+    text-align: center;
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rental .rental-gallery {
+    width: 80%;
+    height: 80%;
+}
+#rental .rental-gallery {
+	position: relative;
+	font-family: 'Helvetica Neue', sans-serif;
+	perspective: 1400px;
+	transform-style: preserve-3d;
+}
+
+#rental .rental-gallery input[type=radio] {
+	position: relative;
+	top: 60%;
+	left: 60%;
+	width: 18px;
+	height: 18px;
+	margin: 0 15px 0 0;
+	opacity: 0;
+	transform: translateX(-83px);
+	cursor: pointer;
+}
+
+
+#rental .rental-gallery input[type=radio]:nth-child(3) {
+	margin-right: 0px;
+}
+
+#rental .rental-gallery input[type=radio]:checked {
+	opacity: 0;
+    display: none;
+}
+
+
+#rental .rental-gallery label,
+#rental .rental-gallery label img {
+	position: absolute;
+	/* width: 380px;
+	height: 800px; */
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 400ms ease;
+}
+#rental .rental-gallery label {
+    width: 226px;
+    height: 475px;
+    top: 10%;
+    left: 40%;
+    /* transform: translateX(-50%); */
+}
+#rental .rental-gallery label img {
+    width: 226px;
+    height: 475px;
+}
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3 {
+	box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+	transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide1 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(70%, 0, -100px);
+}
+
+/* Previous Slide */
+#s1:checked~#slide3,
+#s2:checked~#slide1,
+#s3:checked~#slide2 {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+	transform: translate3d(-70%, 0, -100px);
+}
+
+.click-modal {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	/* outline: 4px solid green; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6)
+}
+
+.click-modal a {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.click-modal a:hover {
+	background: #fff;
+	color: black;
+}
+
+.click-modal > p {
+	font-size: 1vw;
+    text-align: center;
+}
+
+.click-modal span {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+}
+
+    /* info */
+#info {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+#info .info-gallery {
+    width: 100%;
+    height: 100%;
+
+    /* outline: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+#info .info-gallery .info-wrap {
+    width: 100%;
+    height: 25%;
+    background-color: #000;
+}
+#info .info-gallery .info-wrap a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#info .info-gallery .info-wrap a img {
+    object-fit: cover;
+}
+#info .info-gallery .info-wrap a:hover .opacity-filter,
+#info .info-gallery .info-wrap a:hover img{
+    transition: .5s;
+    transform: scale(1.2);
+    
+}
+#info .info-gallery .info-wrap a .opacity-filter {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#info .info-gallery .info-wrap a h3 {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
 
 }

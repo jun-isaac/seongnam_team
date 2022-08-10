@@ -2,9 +2,10 @@ body {
 	font-family: 'Noto Sans KR', sans-serif;
 	color: #fff;
 	background-color: #000;
+	margin-top: 100px;
 }
 
-h1 {
+#rental > h1 {
 	font-weight: 700;
 	font-size: 40px;
 	position: absolute;
@@ -12,10 +13,14 @@ h1 {
 	top: 30px;
 }
 
-.box {
+.container {
 	position: relative;
 	width: 1440px;
 	margin: 0 auto;
+}
+
+#rental {
+	z-index: 0;
 }
 
 #rental .page a {
@@ -53,7 +58,7 @@ h1 {
 	top: 108px;
 }
 
-h2 {
+#rental h2 {
 	position: absolute;
 	left: 180px;
 	top: 198px;
@@ -78,7 +83,7 @@ h2 {
 	top: 264px;
 }
 
-#rental .box>a {
+#rental .container>a {
 	position: absolute;
 	width: 180px;
 	height: 50px;

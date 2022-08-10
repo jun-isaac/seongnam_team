@@ -3,7 +3,6 @@
 @import url('background-youtube.css');
 @import url('company.css');
 @import url('stage.css');
-@import url('login.css');
 @import url('rental.css');
 
 
@@ -46,6 +45,7 @@
     display: flex;
     text-align: center;
     width: 694px;
+    font-weight: 500;
 }
 
 .gnb>li {
@@ -56,7 +56,7 @@
 }
 
 .gnb>li:hover {
-    background-color: #000;
+    background-color: var(--main-color);
     /* color: var(--main-color); */
 }
 
@@ -68,7 +68,7 @@
     position: absolute;
     width: 100%;
     display: none;
-    background-color: #000;
+    background-color: var(--main-color);
 }
 
 .gnb>li>.sub>li {
@@ -135,9 +135,10 @@ body {
 #toggle-menu {
     position: absolute;
     right: 0;
+    top: 0;
     top: var(--header-height);
     width: 600px;
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     background-color: #fff;
     /* 많이축소하면 보임 ㅎㅎ.. */
     transform: translateX(200%);
@@ -150,11 +151,79 @@ body {
     position: fixed;
     overflow: scroll;
     display: block;
+    transition: .5s;
     transform: translateX(0);
     /* box-shadow: rgba(0, 0, 0, 0.7) 0 0 0 99999px; */
 }
 
 /* 토글메뉴 로그인섹션 */
+
+.hidden {
+	display: none;
+}
+
+#toggle-menu p {
+	position: absolute;
+	font-size: 22px;
+	font-weight: 500;
+	left: 239px;
+	top: 103px;
+}
+
+.profile-img {
+	position: absolute;
+	display: block;
+	left: 150px;
+	top: 78px;
+}
+
+#logout {
+	position: absolute;
+	right: 15px;
+	top: 11px;
+	padding: 5px 15px;
+	border: 0.5px solid #CCCCCC
+}
+
+
+.academy {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 0px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	border-right: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cancel {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 187px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	border-right: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.check {
+	position: absolute;
+	width: calc(560px / 3);
+	height: 60px;
+	left: 372px;
+	top: 240px;
+	border-top: 0.5px solid #111111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 #toggle-menu .login-section {
     position: relative;
     width: 560px;
@@ -364,6 +433,11 @@ footer .copyright {
     }
 
     /* 헤더 토글메뉴 */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     #toggle-menu {
         position: absolute;
         right: 0;
