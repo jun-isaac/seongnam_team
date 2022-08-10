@@ -1,0 +1,123 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #fff;
+	background-color: #000;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 40px;
+	position: absolute;
+	left: 180px;
+	top: 30px;
+}
+
+.box {
+	position: relative;
+	width: 1440px;
+	margin: 0 auto;
+}
+
+#rental .page a {
+	background: #D9D9D9;
+	color: #000;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.page a:nth-child(1) {
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	left: 180px;
+	top: 108px;
+}
+
+.page a:nth-child(2) {
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	left: 315px;
+	top: 108px;
+}
+
+.page a:nth-child(3) {
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	left: 450px;
+	top: 108px;
+}
+
+h2 {
+	position: absolute;
+	left: 180px;
+	top: 198px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 46px;
+}
+
+.img01 {
+	position: absolute;
+	width: 518px;
+	height: 368px;
+	left: 180px;
+	top: 264px;
+}
+
+.img02 {
+	position: absolute;
+	width: 518px;
+	height: 368px;
+	left: 742px;
+	top: 264px;
+}
+
+#rental .box>a {
+	position: absolute;
+	width: 180px;
+	height: 50px;
+	right: 178px;
+	top: 194px;
+	background: #D9D9D9;
+	color: #000;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.text p:nth-child(1) {
+	position: absolute;
+	max-width: 403px;
+	left: 180px;
+	top: 665px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 35px;
+}
+
+.text p:nth-child(2) {
+	position: absolute;
+	max-width: 821px;
+	left: 181px;
+	top: 741px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.text p:nth-child(3) {
+	position: absolute;
+	max-width: 1079px;
+	left: 181px;
+	top: 793px;
+	font-weight: 500;
+	font-size: 16px;
+}
