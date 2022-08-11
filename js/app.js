@@ -156,11 +156,25 @@ $(function () {
 
 // 대관안내 모달 
 $(function () {
-    $('#rental #slider label .click-modal .rental-detail').click(function () {
-        $('.rental-modal').addClass('on')
+    $('#rental #slider label .click-modal .rental-detail-opera').click(function () {
+        $('.rental-modal-opera').addClass('on')
     });
-    $('#rental .rental-modal #close-btn').click(function () {
-        $('#rental .rental-modal').removeClass('on')
+    $('#rental .rental-modal-opera #close-btn').click(function () {
+        $('#rental .rental-modal-opera').removeClass('on')
+    });
+
+    $('#rental #slider label .click-modal .rental-detail-concert').click(function () {
+        $('.rental-modal-concert').addClass('on')
+    });
+    $('#rental .rental-modal-concert #close-btn').click(function () {
+        $('#rental .rental-modal-concert').removeClass('on')
+    });
+
+    $('#rental #slider label .click-modal .rental-detail-ensemble').click(function () {
+        $('.rental-modal-ensemble').addClass('on')
+    });
+    $('#rental .rental-modal-ensemble #close-btn').click(function () {
+        $('#rental .rental-modal-ensemble').removeClass('on')
     });
 });
 
