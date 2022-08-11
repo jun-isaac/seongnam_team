@@ -1,52 +1,54 @@
 // 헤더 메뉴
-$(function(){
-        $('#header nav .gnb > li').hover(function(){
-            $(this).find('.sub').stop().slideDown();
-        },function(){
-            $(this).find('.sub').stop().slideUp();
-        });
+$(function () {
+    $('#header nav .gnb > li').hover(function () {
+        $(this).find('.sub').stop().slideDown();
+    }, function () {
+        $(this).find('.sub').stop().slideUp();
+    });
 });
 
 
 
 // 토글메뉴버튼 애니메이션
-$(function(){
-    $(".hamburger").click(function(){
+$(function () {
+    $(".hamburger").click(function () {
         $(this).toggleClass("active");
     });
-    
-    $('#toggle-menu-btn').click(function(){
+
+    $('#toggle-menu-btn').click(function () {
         $('#toggle-menu').toggleClass('on');
     })
 });
 
 // 토글메뉴의 메뉴 슬라이드 애니메이션
-$(function(){
-    $('#toggle-gnb > li').hover(function(){
+$(function () {
+    $('#toggle-gnb > li').hover(function () {
         $(this).find('.sub').stop().slideDown();
-    },function(){
+    }, function () {
         $(this).find('.sub').stop().slideUp();
     });
 });
 
 // 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
-$(function(){
-    $('#toggle-gnb > li > .gnb-plus').click(function(){
+$(function () {
+    $('#toggle-gnb > li > .gnb-plus').click(function () {
         $(this).find('.sub').stop().slideDown();
     });
 });
 
 // 검색바 뿅 
-$(function(){
-    $('#tool-zone .container .tool-wrap .search').click(function(){
+$(function () {
+    $('#tool-zone .container .tool-wrap .search').click(function () {
         $('#tool-zone .container .tool-wrap .search-bar').toggleClass('on')
     })
 });
 
 // 탑버튼 
-$(function(){
-    $('.top').click(function(){
-        $('html, body').animate({scrollTop:0},400);
+$(function () {
+    $('.top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
         return false;
     });
 })
@@ -74,82 +76,118 @@ $(function () {
 
 
         if (scrollposition >= 2000) {
-           $('#tool-zone').addClass('on');
+            $('#tool-zone').addClass('on');
         } else {
             $('#tool-zone').removeClass('on');
         }
 
-        
+
     });
 });
 
 // #show swiper
-$(function(){
+$(function () {
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-      
+
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+            el: '.swiper-pagination',
         },
-      
+
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-      
+
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar',
+            el: '.swiper-scrollbar',
         },
     });
 });
 
 // exhibition 전시 섹션 AOS 
-$(function(){
+$(function () {
 
     AOS.init();
-  
-  })
+
+})
 
 
 // footer 
-$(function(){
-        //instagram hover
-        $("#insta").hover(
-            function() {$(this).attr("src","images/instagram_2.png");
-            },
-            function() {$(this).attr("src","images/instagram.png"); 
+$(function () {
+    //instagram hover
+    $("#insta").hover(
+        function () {
+            $(this).attr("src", "images/instagram_2.png");
+        },
+        function () {
+            $(this).attr("src", "images/instagram.png");
         });
-        //youtube hover
-        $("#youtube").hover(
-            function() {$(this).attr("src","images/youtube_2.png");
-            },
-            function() {$(this).attr("src","images/youtube.png"); 
+    //youtube hover
+    $("#youtube").hover(
+        function () {
+            $(this).attr("src", "images/youtube_2.png");
+        },
+        function () {
+            $(this).attr("src", "images/youtube.png");
         });
-        //kakao hover
-        $("#kakaotalk").hover(
-            function() {$(this).attr("src","images/kakao_2.png");
-            },
-            function() {$(this).attr("src","images/kakao.png"); 
+    //kakao hover
+    $("#kakaotalk").hover(
+        function () {
+            $(this).attr("src", "images/kakao_2.png");
+        },
+        function () {
+            $(this).attr("src", "images/kakao.png");
         });
-        //naver hover
-        $("#naver").hover(
-            function() {$(this).attr("src","images/navrer_1.png");
-            },
-            function() {$(this).attr("src","images/navrer.png"); 
+    //naver hover
+    $("#naver").hover(
+        function () {
+            $(this).attr("src", "images/navrer_1.png");
+        },
+        function () {
+            $(this).attr("src", "images/navrer.png");
         });
 });
 
 // 대관안내 모달 
-$(function(){
-    $('#rental #slider label .click-modal .rental-detail').click(function(){
+$(function () {
+    $('#rental #slider label .click-modal .rental-detail').click(function () {
         $('.rental-modal').addClass('on')
     });
-    $('#rental .rental-modal #close-btn').click(function(){
+    $('#rental .rental-modal #close-btn').click(function () {
         $('#rental .rental-modal').removeClass('on')
+    });
+});
+
+
+
+$(function () {
+    $('.rental-page-opera-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-ensemble').removeClass('on');
+        $('#rental-page-concert').removeClass('on');
+        // 표시
+        $('#rental-page-opera').removeClass('on');
+    });
+
+    $('.rental-page-concert-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-opera').addClass('on');
+        $('#rental-page-ensemble').removeClass('on');
+        // 표시
+        $('#rental-page-concert').addClass('on');
+    });
+
+    $('.rental-page-ensemble-btn').click(function () {
+        // 탭 초기화
+        $('#rental-page-concert').removeClass('on');
+        $('#rental-page-opera').addClass('on');
+        // 표시
+        $('#rental-page-ensemble').addClass('on');
     });
 });
