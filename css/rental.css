@@ -5,11 +5,11 @@ body {
 	margin-top: 100px;
 }
 
-#rental > h1 {
+#rental-page .container > h1 {
 	font-weight: 700;
 	font-size: 40px;
 	position: absolute;
-	left: 180px;
+	margin-left: 180px;
 	top: 30px;
 }
 
@@ -19,11 +19,13 @@ body {
 	margin: 0 auto;
 }
 
-#rental {
+#rental-page {
+	height: 1068px;
 	z-index: 0;
 }
 
-#rental .page a {
+
+#rental-page .page a {
 	background: #D9D9D9;
 	color: #000;
 	border-radius: 10px;
@@ -58,7 +60,7 @@ body {
 	top: 108px;
 }
 
-#rental h2 {
+#rental-page h2 {
 	position: absolute;
 	left: 180px;
 	top: 198px;
@@ -83,7 +85,7 @@ body {
 	top: 264px;
 }
 
-#rental .container>a {
+#rental-page .container>a {
 	position: absolute;
 	width: 180px;
 	height: 50px;

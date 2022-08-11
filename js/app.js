@@ -143,3 +143,13 @@ $(function(){
             function() {$(this).attr("src","images/navrer.png"); 
         });
 });
+
+// 대관안내 모달 
+$(function(){
+    $('#rental #slider label .click-modal .rental-detail').click(function(){
+        $('.rental-modal').addClass('on')
+    });
+    $('#rental .rental-modal #close-btn').click(function(){
+        $('#rental .rental-modal').removeClass('on')
+    });
+});

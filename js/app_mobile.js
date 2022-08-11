@@ -21,11 +21,12 @@ $(function () {
 
 
         if (scrollposition >= 1500) {
-           $('#tool-zone').addClass('on');
+            $('#tool-zone').addClass('on');
         } else {
             $('#tool-zone').removeClass('on');
         }
 
-        
+
     });
+
 });

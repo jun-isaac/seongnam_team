@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성남아트센터 &#60; 상세 페이지 &#62;</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- 목록 페이지 전용 style -->
+  <link rel="stylesheet" href="../css/product-detail.css">
+
+  <!-- 달력 전용 css -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- app -->
+  <script src="../js/app.js"></script>
+
+</head>
+
+<body id="product-01a-show">
+
+  <!-- 헤더 파트 -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="./">
+          <img src="../images/logo.png" alt="LOGO">
+        </a>
+      </div>
+      <nav id="header-gnb">
+        <ul class="gnb">
+          <li><a href="../product-01a1-show.html">공연</a>
+            <ul class="sub">
+              <li><a href="../product-01b-show.html">추천공연</a></li>
+              <li><a href="../product-01c-show.html">월간공연</a></li>
+              <li><a href="../product-01d-show.html">연간공연</a></li>
+            </ul>
+          </li>
+          <li><a href="../product-02a1-exhibition.html">전시</a>
+            <ul class="sub">
+              <li><a href="../product-02b-exhibition.html">추천전시</a></li>
+              <li><a href="../product-02c-exhibition.html">월간전시</a></li>
+              <li><a href="../product-02d-exhibition.html">연간전시</a></li>
+            </ul>
+          </li>
+          <li><a href="../rental.html">대관안내</a>
+
+          </li>
+          <li><a href="../company.html">센터소개</a>
+
+          </li>
+        </ul>
+      </nav>
+      <div id="toggle-menu-btn">
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <div id="toggle-menu">
+    <div class="login-section">
+      <form class="hidden profile" id="greeting">
+        <img class="profile-img" src="../images/profile.png" alt="프로필">
+        <p id="name"></p>
+        <button id="logout">로그아웃</button>
+        <a href="./">
+          <div class="academy">아카데미 수강확인</div>
+        </a>
+        <a href="./">
+          <div class="cancel">예매확인 및 취소</div>
+        </a>
+        <a href="./">
+          <div class="check">출석부</div>
+        </a>
+      </form>
+      <form class="hidden" id="login-form">
+        <div class="login-box">
+          <input id="id" required type="text" placeholder="아이디">
+          <input id="pw" required type="text" placeholder="비밀번호">
+          <button id="login-btn">
+            <img src="../images/login-btn.png" alt="login-btn">
+          </button>
+        </div>
+        <div class="login-info">
+
+          <label for="idsave"><input type="checkbox" id="idsave"> 아이디 저장하기</label>
+          <div class="signup">
+            <span><a href="./">회원가입</a></span>
+            <span>|</span>
+            <span><a href="./">ID / PW 찾기</a></span>
+          </div>
+        </div>
+        <div class="login-sns">
+          <button><img src="../images/naver.png" alt="naver"></button>
+          <button><img src="../images/kakaotalk.png" alt="kakaotalk"></button>
+          <button><img src="../images/facebook.png" alt="facebook"></button>
+        </div>
+      </form>
+    </div>
+
+    <ul id="toggle-gnb">
+      <li><a href="../product-01a1-show.html">공연</a>
+        <button class="gnb-plus"><img src="images/gnb-plus.png" alt="gnb-plus"></button>
+        <ul class="sub">
+          <li><a href="../product-01b-show.html">추천공연</a></li>
+          <li><a href="../product-01c-show.html">월간공연</a></li>
+          <li><a href="../product-01d-show.html">연간공연</a></li>
+        </ul>
+      </li>
+      <li><a href="./">전시</a>
+        <button class="gnb-plus"><img src="../images/gnb-plus.png" alt="gnb-plus"></button>
+        <ul class="sub">
+          <li><a href="../product-02b-exhibition.html">추천전시</a></li>
+          <li><a href="../product-02c-exhibition.html">월간전시</a></li>
+          <li><a href="../product-02d-exhibition.html">연간전시</a></li>
+        </ul>
+      </li>
+      <li><a href="../rental.html">대관안내</a>
+
+      </li>
+      <li><a href="../company.html">센터소개</a>
+
+      </li>
+      <li><a href="./">고객센터</a>
+        <button class="gnb-plus"><img src="../images/gnb-plus.png" alt="gnb-plus"></button>
+        <ul class="sub">
+          <li><a href="./">예매안내</a></li>
+          <li><a href="./">공지사항</a></li>
+          <li><a href="./">자주 묻는 질문</a></li>
+          <li><a href="./">고객의 소리</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </div>
+
+
+  <!-- 텍스트 파트 -->
+  <section class="noticeT">
+
+    <p class="PCOnly">디지로그展 : 해방<span class="ps1">2022년 8월 성남아트센터에서 이벤트를 개최하고
+        있습니다.</span> -자세한 정보는 공지사항을 참고하세요 !-</p>
+    <p class="mobileT">디지로그展 : 해방</p>
+
+  </section>
+
+
+  <!-- 상세 페이지 파트 -->
+  <section id="detailS">
+    <div class="dtext">
+      <article class="topInfo">
+        <p class="topt1">
+          추천전시
+        </p>
+
+        <h2 class="topt2">
+          디지로그展 : 해방
+        </h2>
+
+        <p class="topt3">
+          2022-07-15 ~ 2022-10-02
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="detailcontainer">
+
+      <article id="showinfo">
+
+        <div class="imgPart">
+
+          <img class="poster" src="../images/pd02a1.jpg" alt="poster">
+
+          <div class="btns">
+            <div class="bcontainer">
+              <a class="a1" ><img class="ht1" src="../images/heart1.png" alt="ht1"><span class="s1"> 548
+                </span><span class="s2">Like</span></a>
+              <a class="a2" ><span class="a2s">예매하기</span></a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="textPart">
+          <p class="tpt1">
+            <b>시간</b>- 10:00~18:00 (매표 및 입장마감 17:00)<br>
+            * 매주 월요일 휴관<br>
+            * 추석 당일(09/10) 휴관<br>
+            <b>가격</b>- 성인 (만 19세 이상) - 18,000원 (단체가 15,000원)<br>
+            청소년 (만 13세 이상- 만 19세 미만) - 15,000원 (단체가 12,000원)<br>
+            아동 (만 13세 미만) - 12,000원 (단체가 9,000원)<br>
+            특별할인 - 10,000원<br>
+            36개월 미만 - 무료<br>
+            <b>연령</b>- 전체관람
+          </p>
+
+          <p class="tpt1-2">
+            <b>시간</b>- 10:00~18:00 (매표 및 입장마감 17:00)<br>
+            * 매주 월요일 휴관<br>
+            * 추석 당일(09/10) 휴관<br>
+            <b>가격</b>- 성인 (만 19세 이상) - 18,000원 (단체가 15,000원)<br>
+            청소년 (만 13세 이상- 만 19세 미만) - 15,000원 (단체가 12,000원)<br>
+            아동 (만 13세 미만) - 12,000원 (단체가 9,000원)<br>
+            특별할인 - 10,000원<br>
+            36개월 미만 - 무료<br>
+            <b>연령</b>- 전체관람
+          </p>
+
+          <p class="tpt2">
+            문의- 031-783-8000
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- 달력 -->
+  <div id="calendar">
+    <div id="calendar_header"><i class="icon-chevron-left"><img src="../images/L.png" alt=""></i>
+      <h1></h1><i class="icon-chevron-right"><img src="../images/R.png" alt=""></i>
+    </div>
+    <div id="calendar_weekdays"></div>
+    <div id="calendar_content"></div>
+    <img class="exit" src="../images/x.png" alt="">
+  </div>
+</body>
+
+<!-- 아래 버튼 -->
+<article class="downBtn">
+  <div class="downB" onclick="$('html').animate({scrollTop : 1500}, 1000)">
+    <img class="downbi" src="../images/downW.png" alt="down">
+  </div>
+</article>
+<!-- 위 버튼 -->
+<article class="upBtn">
+  <div class="upB" onclick="$('html').animate({scrollTop : 0}, 1000)">
+    <img class="upbi" src="../images/upW.png" alt="down">
+  </div>
+</article>
+
+
+
+<!-- 돌아가기 -->
+<div class="gb">
+  <button class="goBack" onclick="history.back()">목록 보기</button>
+</div>
+
+<div class="si">
+  <img class="show" src="../images/pd02a1-2.jpg" alt="">
+</div>
+
+
+<footer>
+
+  <div class="logo">
+    <a href="./"><img src="../images/footer_logo.png" alt="성남아트센터"></a>
+  </div>
+
+  <div class="secret">
+    <a href="./"><span>개인정보취급방침</span></a>
+    <a href="./"><span class="ccc">영상정보처리기기 운영&#47;관리 방침
+      </span></a>
+    <a href="./"><span class="ccc">이메일무단수집거부</span></a>
+    <a href="./"><span class="ccc">저작권보호정책</span></a>
+    <span class="ccc">예매전용 1544-8117</span>
+  </div>
+
+  <div class="address">
+    <p>재단법인 성남문화재단 (13514) 경기도 성남시 분당구 성남대로 808 (야탑동) 전화 : 031-783-8000 팩스 : 031-783-8160</p>
+  </div>
+
+  <div id="line"></div>
+
+  <div class="sns">
+    <div class="sns-pro">
+      <a href="https://www.instagram.com/seongnam_artscenter/" target="_blank" rel="noopener noreferrer nofollow"><img
+          src="../images/instagram.png" alt="instagram" id="insta"></a>
+      <a href="https://www.youtube.com/user/snartscenter" target="_blank" rel="noopener noreferrer nofollow"><img
+          src="../images/youtube.png" alt="youtube" id="youtube"></a>
+      <a id="kakao" href="https://pf.kakao.com/_rdAfxl" target="_blank" rel="noopener noreferrer nofollow"><img
+          src="../images/kakao.png" alt="kakaotalk" id="kakaotalk"></a>
+      <a href="https://blog.naver.com/snartc" target="_blank" rel="noopener noreferrer nofollow"><img
+          src="../images/navrer.png" alt="naver" id="naver"></a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>사업자등록번호 129-82-07974 통신판매업신고 제2006-경기성남-674호</p>
+    <p>Copyright© 2019 SEONGNAM ARTS CENTER. All Rights Reserved</p>
+  </div>
+
+</footer>
+
+</body>
+
+</html>
