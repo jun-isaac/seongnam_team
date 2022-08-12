@@ -263,7 +263,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 #rental>.main-title {
@@ -404,14 +404,14 @@ input[type=radio]:checked {
 }
 
 .click-modal>p {
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: center;
 }
 
 .click-modal span {
     margin-top: 5px;
     font-size: 1.5vw;
-    padding: 5px 40px;
+    padding: 5px 30px;
 }
 
 /* info */
