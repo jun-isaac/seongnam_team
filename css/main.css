@@ -1,13 +1,14 @@
 /* #main-home--------- */
 #main-home {
     width: 100%;
-    height: 300vh;
+    height: 200vh;
+    top: -100px;
     position: relative;
 }
 
 #main-home .left-curtain {
     width: 60vw;
-    height: 100%;
+    height: calc(100% + 100px);
     background-color: #111;
     position: relative;
 }
@@ -30,7 +31,7 @@
     top: 0;
     right: 0;
     width: 40vw;
-    height: 100%;
+    height: calc(100% + 100px);
     background-color: #111;
 }
 
@@ -40,8 +41,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 8;
     opacity: 0;
+    background-color: pink;
     transition: 1s;
 }
 
@@ -58,8 +60,8 @@
     position: absolute;
     width: 50px;
     height: 186px;
-    right: 36px;
-    bottom: 144px;
+    right: 50px;
+    bottom: 50px;
     /* background-color: pink; */
     display: flex;
     flex-direction: column;
