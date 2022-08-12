@@ -20,19 +20,13 @@ $(function () {
     })
 });
 
-// 토글메뉴의 메뉴 슬라이드 애니메이션
-$(function () {
-    $('#toggle-gnb > li').hover(function () {
-        $(this).find('.sub').stop().slideDown();
-    }, function () {
-        $(this).find('.sub').stop().slideUp();
-    });
-});
-
 // 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
 $(function () {
-    $('#toggle-gnb > li > .gnb-plus').click(function () {
-        $(this).find('.sub').stop().slideDown();
+    $('#toggle-gnb > li ').hover(function(){
+        $(this).find('.sub').toggle(function(){
+            $(this).find('.sub').stop().slideDown();
+            $(this).find('.sub').stop().slideUp();
+        });
     });
 });
 
