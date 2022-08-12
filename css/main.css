@@ -294,8 +294,8 @@
 
 #slider {
     position: relative;
-    width: 25%;
-    height: 50vw;
+    width: 40%;
+    height: 30vw;
     margin: 150px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
@@ -376,7 +376,7 @@ input[type=radio]:checked {
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 30%;
     /* outline: 4px solid green; */
     display: flex;
     justify-content: center;
@@ -384,28 +384,22 @@ input[type=radio]:checked {
     background: rgba(0, 0, 0, 0.6)
 }
 
-.click-modal .rental-detail {
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.click-modal .rental-detail-opera:hover {
+.click-modal .rental-detail-opera {
     background: #fff;
     color: black;
+    border-radius: 5px;
 }
 
-.click-modal .rental-detail-concert:hover {
+.click-modal .rental-detail-concert {
     background: #fff;
     color: black;
+    border-radius: 5px;
 }
 
-.click-modal .rental-detail-ensemble:hover {
+.click-modal .rental-detail-ensemble {
     background: #fff;
     color: black;
+    border-radius: 5px;
 }
 
 .click-modal>p {
