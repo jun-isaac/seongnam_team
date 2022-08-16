@@ -29,12 +29,6 @@ body {
 	top: 30px;
 }
 
-.page {
-	position: absolute;
-	top: 108px;
-	left: 308px;
-}
-
 .page a {
 	background: #D9D9D9;
 	color: #000;
@@ -45,6 +39,7 @@ body {
 	font-weight: 700;
 	font-size: 18px;
 	z-index: 3;
+	margin-right: 10px;
 }
 
 .rental-page-opera-btn {
@@ -59,7 +54,7 @@ body {
 	position: absolute;
 	width: 130px;
 	height: 50px;
-	left: 315px;
+	left: 320px;
 	top: 108px;
 }
 
@@ -67,7 +62,7 @@ body {
 	position: absolute;
 	width: 130px;
 	height: 50px;
-	left: 450px;
+	left: 460px;
 	top: 108px;
 }
 
@@ -100,7 +95,7 @@ body {
 	position: absolute;
 	width: 180px;
 	height: 50px;
-	right: 178px;
+	left: 1082px;
 	top: 194px;
 	background: #D9D9D9;
 	color: #000;
@@ -112,56 +107,31 @@ body {
 	font-size: 18px;
 }
 
-.text p:nth-child(1) {
+.text {
 	position: absolute;
-	max-width: 403px;
 	left: 180px;
 	top: 665px;
+}
+
+.text p:first-child {
+	max-width: 403px;
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 35px;
+	margin-bottom: 40px;
 }
 
 .text p:nth-child(2) {
-	position: absolute;
 	max-width: 821px;
-	left: 181px;
-	top: 741px;
 	font-weight: 700;
 	font-size: 20px;
+	margin-bottom: 23px;
 }
 
-.text p:nth-child(3) {
-	position: absolute;
+.text p:last-child {
 	max-width: 1079px;
-	left: 181px;
-	top: 793px;
 	font-weight: 500;
 	font-size: 16px;
 }
-
-
-#rental-page-concert .text p:nth-child(3) {
-	position: absolute;
-	max-width: 1079px;
-	left: 181px;
-	top: 793px;
-	margin-top: 23px;
-	font-weight: 500;
-	font-size: 16px;
-}
-
-
-#rental-page-ensemble .text p:nth-child(3) {
-	position: absolute;
-	max-width: 1079px;
-	left: 181px;
-	top: 793px;
-	margin-top: 23px;
-	font-weight: 500;
-	font-size: 16px;
-}
-
 
 
 #rental-page-concert {
@@ -195,7 +165,7 @@ body {
 	position: absolute;
 	width: 180px;
 	height: 50px;
-	right: 178px;
+	left: 1082px;
 	top: 194px;
 	background: #D9D9D9;
 	color: #000;
@@ -241,7 +211,7 @@ body {
 	position: absolute;
 	width: 180px;
 	height: 50px;
-	right: 178px;
+	left: 1082px;
 	top: 194px;
 	background: #D9D9D9;
 	color: #000;
