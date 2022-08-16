@@ -222,3 +222,235 @@ body {
 	font-weight: 700;
 	font-size: 18px;
 }
+
+
+/* 모바일 버전 */
+@media only screen and (max-width: 375px) {
+
+	body {
+		font-family: 'Noto Sans KR', sans-serif;
+		color: #fff;
+		background-color: #000;
+		margin-top: 60px;
+	}
+
+
+	.container {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#header .container {
+		height: var(--header-height-m);
+	}
+	
+	#rental-page-opera {
+		height: 1400px;
+		z-index: 0;
+		display: flex;
+	}
+	
+	#rental-page-opera.on {
+		display: none;
+	}
+	
+	#rental-page-opera .container > h1 {
+		font-weight: 700;
+		font-size: 30px;
+		margin-left: 30px;
+		top: 21px;
+	}
+	
+	.page a {
+		background: #D9D9D9;
+		color: #000;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 14px;
+		z-index: 3;
+		margin-right: 10px;
+	}
+	
+	.rental-page-opera-btn {
+		position: absolute;
+		width: 100px;
+		height: 40px;
+		left: 30px;
+		top: 99px;
+	}
+	
+	.rental-page-concert-btn {
+		position: absolute;
+		width: 100px;
+		height: 40px;
+		left: 138px;
+		top: 99px;
+	}
+	
+	.rental-page-ensemble-btn {
+		position: absolute;
+		width: 100px;
+		height: 40px;
+		left: 245px;
+		top: 99px;
+	}
+	
+	#rental-page-opera h2 {
+		position: absolute;
+		left: 30px;
+		top: 154px;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	
+	.img01 {
+		position: absolute;
+		width: 315px;
+		height: 222px;
+		left: 30px;
+		top: 208px;
+	}
+	
+	.img02 {
+		position: absolute;
+		width: 315px;
+		height: 220px;
+		left: 30px;
+		top: 444px;
+	}
+	
+	#rental-page-opera .container>a {
+		position: absolute;
+		width: 220px;
+		height: 50px;
+		left: 75px;
+		top: 1302px;
+		background: #D9D9D9;
+		color: #000;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 22px;
+	}
+	
+	.text {
+		position: absolute;
+		left: 30px;
+		top: 699px;
+	}
+	
+	.text p:first-child {
+		max-width: 315px;
+		font-weight: 700;
+		font-size: 18px;
+		margin-bottom: 21px;
+	}
+	
+	.text p:nth-child(2) {
+		max-width: 315px;
+		font-weight: 700;
+		font-size: 16px;
+		margin-bottom: 13px;
+	}
+	
+	.text p:last-child {
+		max-width: 315px;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	
+	
+	#rental-page-concert {
+		height: 1068px;
+		z-index: 0;
+		display: none;
+	}
+	
+	#rental-page-concert.on{
+		display: flex;
+	}
+	
+	#rental-page-concert .container > h1 {
+		font-weight: 700;
+		font-size: 40px;
+		position: absolute;
+		margin-left: 180px;
+		top: 30px;
+	}
+	
+	#rental-page-concert h2 {
+		position: absolute;
+		left: 180px;
+		top: 198px;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 46px;
+	}
+	
+	#rental-page-concert .container>a {
+		position: absolute;
+		width: 180px;
+		height: 50px;
+		left: 1082px;
+		top: 194px;
+		background: #D9D9D9;
+		color: #000;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	
+	
+	
+	
+	#rental-page-ensemble {
+		height: 1068px;
+		z-index: 0;
+		display: none;
+	}
+	
+	#rental-page-ensemble.on{
+		display: flex;
+	}
+	
+	#rental-page-ensemble .container > h1 {
+		font-weight: 700;
+		font-size: 40px;
+		position: absolute;
+		margin-left: 180px;
+		top: 30px;
+	}
+	
+	#rental-page-ensemble h2 {
+		position: absolute;
+		left: 180px;
+		top: 198px;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 46px;
+	}
+	
+	#rental-page-ensemble .container>a {
+		position: absolute;
+		width: 180px;
+		height: 50px;
+		left: 1082px;
+		top: 194px;
+		background: #D9D9D9;
+		color: #000;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 18px;
+	}
+}
