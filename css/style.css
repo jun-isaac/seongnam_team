@@ -622,19 +622,17 @@ footer .copyright {
 
 
 
-
-
-    /* 푸터 */
     footer {
         width: 100%;
-        height: 100%;
+        height: 275px;
         background: #000;
         color: #fff;
         margin: 0 auto;
-        padding: 20px;
-        /*text-align: left;*/
+        text-align: center;
         font-family: "Noto Sans Korean", sans-serif;
-        font-size: 12px;
+        font-size: 14px;
+        /*피그마와 같이주면 1000픽셀쯤부터 찌그러짐.*/
+        padding-top: 30px;
     }
 
     footer .logo img {
