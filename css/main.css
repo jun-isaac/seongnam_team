@@ -171,8 +171,12 @@
 
 
 #show .swiper {
-    width: 80%;
+    width: 85%;
     height: 80%;
+}
+
+.swiper-pagination {
+    display: none;
 }
 
 #show .swiper .swiper-wrapper {}
@@ -181,6 +185,7 @@
 
 #show .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
+    height: 100%;
 }
 
 
@@ -205,7 +210,7 @@
 /* 전시 안내 파트 시작 */
 #exhibition .ex-gallery {
     width: 80%;
-    height: 200vh;
+    height: 215vh;
     position: relative;
 }
 
@@ -993,7 +998,7 @@ input[type=radio]:checked {
         width: 100%;
         /* 101px은 .main-title의 높이값임 */
         height: calc(330vh + 100px);
-        padding-top: 100px;
+        padding-top: 0;
 
         display: flex;
         align-items: center;
@@ -1007,21 +1012,22 @@ input[type=radio]:checked {
 
     #exhibition .ex-gallery {
         width: 80%;
-        height: 80%;
+        height: 85%;
         position: relative;
-        background-color: pink;
+        /* background-color: pink; */
     }
 
     #exhibition .ex-gallery .imgbox {
         position: absolute;
         width: 80vw;
         height: 40vh;
-        outline: 3px solid red;
+        /* outline: 3px solid red; */
         display: flex;
         justify-content: space-between;
     }
 
     #exhibition .ex-gallery .imgbox .ex-info {
+        padding: 0 10px 0 10px;
         overflow: hidden;
     }
 
@@ -1060,6 +1066,72 @@ input[type=radio]:checked {
         display: flex;
         flex-direction: row-reverse;
     }
+
+    /* 전시 박스 각 글씨 */
+    .eTl {
+        margin-left: 0px;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    .eP1 {
+        margin-left: 0px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        display: none;
+    }
+
+    .eP2 {
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .eP3 {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        display: none;
+    }
+
+    /* 전시 박스 버튼들 */
+    .exBtn {
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .exBtn>a {
+        padding: 8px 30px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 0px;
+        line-height: 50px;
+    }
+
+    .exBtn .exA1 {
+        border: 2px solid #921D1D;
+        background-color: #fff;
+        color: #921D1D;
+    }
+
+    .exBtn .exA1:hover {
+        border: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+
+    .exBtn .exA2 {
+        background-color: #921D1D;
+        border: 2px solid #921D1D;
+        color: #fff;
+    }
+
+    .exBtn .exA2:hover {
+        background-color: var(--main-color);
+        border: 2px solid var(--main-color);
+    }
+
 
     /* 대관안내 */
     #rental {
