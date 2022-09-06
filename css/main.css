@@ -873,7 +873,7 @@ input[type=radio]:checked {
 
     /* #main-home--------- */
     #main-home .left-curtain {
-        width: 100vw;
+        width: 375px;
         height: 100%;
         background-color: #111;
         position: relative;
@@ -974,7 +974,7 @@ input[type=radio]:checked {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 375px;
         height: 100px;
         /* line-height: 200px; */
         background-color: rgba(0, 0, 0, 0.5);
@@ -995,7 +995,7 @@ input[type=radio]:checked {
 
     /* 전시 */
     #exhibition {
-        width: 100%;
+        width: 375px;
         /* 101px은 .main-title의 높이값임 */
         height: calc(330vh + 100px);
         padding-top: 0;
@@ -1011,7 +1011,7 @@ input[type=radio]:checked {
     }
 
     #exhibition .ex-gallery {
-        width: 80%;
+        width: 300px;
         height: 85%;
         position: relative;
         /* background-color: pink; */
@@ -1019,7 +1019,7 @@ input[type=radio]:checked {
 
     #exhibition .ex-gallery .imgbox {
         position: absolute;
-        width: 80vw;
+        width: 300px;
         height: 40vh;
         /* outline: 3px solid red; */
         display: flex;
@@ -1135,7 +1135,7 @@ input[type=radio]:checked {
 
     /* 대관안내 */
     #rental {
-        width: 100%;
+        width: 375px;
         /* 101px은 .main-title의 높이값임 */
         height: calc(100vh + 200px);
         /* padding-top: 200px; */
@@ -1151,7 +1151,7 @@ input[type=radio]:checked {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 375px;
         height: 130px;
         /* line-height: 200px; */
         background-color: rgba(0, 0, 0, 0.5);
@@ -1162,6 +1162,16 @@ input[type=radio]:checked {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    #rental>.main-title h1 {
+        font-weight: 700;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+        line-height: 75px;
     }
 
     #slider {
@@ -1181,9 +1191,8 @@ input[type=radio]:checked {
 
     /* info */
     #info {
-        width: 100%;
+        width: 375px;
         height: 100vh;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1192,7 +1201,7 @@ input[type=radio]:checked {
 
 
     #info .info-gallery {
-        width: 100%;
+        width: 375px;
         height: 100%;
 
         /* outline: 2px solid red; */
@@ -1204,13 +1213,13 @@ input[type=radio]:checked {
     }
 
     #info .info-gallery .info-wrap {
-        width: 100%;
+        width: 375px;
         height: 25%;
         background-color: #000;
     }
 
     #info .info-gallery .info-wrap a {
-        width: 100%;
+        width: 375px;
         height: 100%;
         display: block;
         position: relative;
@@ -1231,14 +1240,14 @@ input[type=radio]:checked {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 375px;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
     #info .info-gallery .info-wrap a h3 {
         position: absolute;
-        width: 100%;
+        width: 375px;
         height: 40px;
         line-height: 40px;
         text-align: center;
@@ -1256,11 +1265,11 @@ input[type=radio]:checked {
         height: 550px;
         background-color: #fff;
         border-radius: 20px;
-        top: 100px;
+        top: 0px;
         left: 50%;
         transform: translateX(-50%);
         color: #000;
-        z-index: 9999;
+        z-index: 999;
     }
 
     #rental .rental-modal-opera.on {
@@ -1290,17 +1299,15 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-opera>article {
-        width: 822px;
+        width: 250px;
         height: 355px;
         /* outline: 1px solid black; */
         margin-left: 30px;
         margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
     }
 
     #rental .rental-modal-opera>article .rental-img {
-        width: 253px;
+        width: 250px;
         height: 209px;
         background-image: url('../images/opera01.png');
         background-repeat: no-repeat;
@@ -1308,7 +1315,7 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-opera>article .rental-info-opera {
-        width: 397px;
+        width: 0px;
     }
 
     #rental .rental-modal-opera>article .rental-info-opera .title {
@@ -1354,7 +1361,7 @@ input[type=radio]:checked {
         height: 550px;
         background-color: #fff;
         border-radius: 20px;
-        top: 100px;
+        top: 0px;
         left: 50%;
         transform: translateX(-50%);
         color: #000;
@@ -1388,17 +1395,15 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-ensemble>article {
-        width: 822px;
+        width: 250px;
         height: 355px;
         /* outline: 1px solid black; */
         margin-left: 30px;
         margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
     }
 
     #rental .rental-modal-ensemble>article .rental-img {
-        width: 253px;
+        width: 250px;
         height: 209px;
         background-image: url('../images/ensemble01.jpeg');
         background-repeat: no-repeat;
@@ -1406,7 +1411,7 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-ensemble>article .rental-info-ensemble {
-        width: 397px;
+        width: 0px;
     }
 
     #rental .rental-modal-ensemble>article .rental-info-ensemble .title {
@@ -1452,7 +1457,7 @@ input[type=radio]:checked {
         height: 550px;
         background-color: #fff;
         border-radius: 20px;
-        top: 100px;
+        top: 0px;
         left: 50%;
         transform: translateX(-50%);
         color: #000;
@@ -1486,7 +1491,7 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-concert>article {
-        width: 822px;
+        width: 250px;
         height: 355px;
         /* outline: 1px solid black; */
         margin-left: 30px;
@@ -1496,7 +1501,7 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-concert>article .rental-img {
-        width: 253px;
+        width: 250px;
         height: 209px;
         background-image: url('../images/consert01.jpeg');
         background-repeat: no-repeat;
@@ -1504,7 +1509,7 @@ input[type=radio]:checked {
     }
 
     #rental .rental-modal-concert>article .rental-info-concert {
-        width: 397px;
+        width: 0px;
     }
 
     #rental .rental-modal-concert>article .rental-info-concert .title {

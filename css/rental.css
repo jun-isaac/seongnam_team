@@ -135,7 +135,7 @@ body {
 
 
 #rental-page-concert {
-	height: 1068px;
+	height: 1500px;
 	z-index: 0;
 	display: none;
 }
@@ -366,38 +366,36 @@ body {
 	
 	
 	#rental-page-concert {
-		height: 1068px;
+		height: 1400px;
 		z-index: 0;
 		display: none;
 	}
-	
+
 	#rental-page-concert.on{
 		display: flex;
 	}
 	
 	#rental-page-concert .container > h1 {
 		font-weight: 700;
-		font-size: 40px;
-		position: absolute;
-		margin-left: 180px;
-		top: 30px;
+		font-size: 30px;
+		margin-left: 30px;
+		top: 21px;
 	}
 	
 	#rental-page-concert h2 {
 		position: absolute;
-		left: 180px;
-		top: 198px;
+		left: 30px;
+		top: 154px;
 		font-weight: 700;
-		font-size: 32px;
-		line-height: 46px;
+		font-size: 20px;
 	}
 	
 	#rental-page-concert .container>a {
 		position: absolute;
-		width: 180px;
+		width: 220px;
 		height: 50px;
-		left: 1082px;
-		top: 194px;
+		left: 75px;
+		top: 1302px;
 		background: #D9D9D9;
 		color: #000;
 		border-radius: 10px;
@@ -405,10 +403,8 @@ body {
 		justify-content: center;
 		align-items: center;
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 22px;
 	}
-	
-	
 	
 	
 	#rental-page-ensemble {
@@ -423,27 +419,25 @@ body {
 	
 	#rental-page-ensemble .container > h1 {
 		font-weight: 700;
-		font-size: 40px;
-		position: absolute;
-		margin-left: 180px;
-		top: 30px;
+		font-size: 30px;
+		margin-left: 30px;
+		top: 21px;
 	}
 	
 	#rental-page-ensemble h2 {
 		position: absolute;
-		left: 180px;
-		top: 198px;
+		left: 30px;
+		top: 154px;
 		font-weight: 700;
-		font-size: 32px;
-		line-height: 46px;
+		font-size: 20px;
 	}
 	
 	#rental-page-ensemble .container>a {
 		position: absolute;
-		width: 180px;
+		width: 220px;
 		height: 50px;
-		left: 1082px;
-		top: 194px;
+		left: 75px;
+		top: 990px;
 		background: #D9D9D9;
 		color: #000;
 		border-radius: 10px;
@@ -451,6 +445,6 @@ body {
 		justify-content: center;
 		align-items: center;
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 22px;
 	}
 }

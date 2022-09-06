@@ -143,7 +143,7 @@ body {
     transform: translateX(200%);
     transition: .5s;
     z-index: 9;
-    
+
 }
 
 #toggle-menu.on {
@@ -158,69 +158,69 @@ body {
 /* 토글메뉴 로그인섹션 */
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 #toggle-menu p {
-	position: absolute;
-	font-size: 22px;
-	font-weight: 500;
-	left: 239px;
-	top: 103px;
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    left: 239px;
+    top: 103px;
 }
 
 .profile-img {
-	position: absolute;
-	display: block;
-	left: 150px;
-	top: 78px;
+    position: absolute;
+    display: block;
+    left: 150px;
+    top: 78px;
 }
 
 #logout {
-	position: absolute;
-	right: 15px;
-	top: 11px;
-	padding: 5px 15px;
-	border: 0.5px solid #CCCCCC
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    padding: 5px 15px;
+    border: 0.5px solid #CCCCCC
 }
 
 
 .academy {
-	position: absolute;
-	width: calc(560px / 3);
-	height: 60px;
-	left: 0px;
-	top: 240px;
-	border-top: 0.5px solid #111111;
-	border-right: 0.5px solid #111111;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    width: calc(560px / 3);
+    height: 60px;
+    left: 0px;
+    top: 240px;
+    border-top: 0.5px solid #111111;
+    border-right: 0.5px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cancel {
-	position: absolute;
-	width: calc(560px / 3);
-	height: 60px;
-	left: 187px;
-	top: 240px;
-	border-top: 0.5px solid #111111;
-	border-right: 0.5px solid #111111;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    width: calc(560px / 3);
+    height: 60px;
+    left: 187px;
+    top: 240px;
+    border-top: 0.5px solid #111111;
+    border-right: 0.5px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .check {
-	position: absolute;
-	width: calc(560px / 3);
-	height: 60px;
-	left: 372px;
-	top: 240px;
-	border-top: 0.5px solid #111111;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    width: calc(560px / 3);
+    height: 60px;
+    left: 372px;
+    top: 240px;
+    border-top: 0.5px solid #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #toggle-menu .login-section {
@@ -269,7 +269,7 @@ body {
     color: #000;
     background-color: #fff;
     width: 560px;
-    font-size: 24px;
+    font-size: 28px;
     margin: 30px auto;
     text-align: center;
 }
@@ -300,9 +300,14 @@ body {
 
 #toggle-gnb>li>.sub {
     width: 100%;
-    background-color: #eaeaea;
-
+    background-color: #eee;
     display: none;
+    font-size: 22px;
+}
+
+#toggle-gnb>li>.sub li:hover {
+    width: 100%;
+    background-color: #ddd;
 }
 
 #toggle-gnb>li>.sub>li {
@@ -320,8 +325,7 @@ body {
 }
 
 #toggle-gnb>li>.sub>li>a {
-    background-color: #eaeaea;
-    color: #fff;
+    color: #333;
 }
 
 
@@ -385,10 +389,12 @@ footer .copyright {
     /* 헤더 */
     #header {
         height: var(--header-height-m);
+        width: 375px;
     }
 
     #header .container {
         position: relative;
+        width: 375px;
     }
 
     #header .container .logo {
@@ -431,14 +437,14 @@ footer .copyright {
 
     /* 헤더 토글메뉴 */
     body {
-        width: 100vw;
+        width: 375px;
         overflow-x: hidden;
     }
 
     #toggle-menu {
         position: absolute;
-        right: 0;
-        /* top: var(--header-height-m); */
+        right: 0px;
+        top: var(--header-height-m);
         width: 375px;
         height: 130vh;
         background-color: #fff;
@@ -598,8 +604,7 @@ footer .copyright {
 
     #toggle-gnb>li>.sub {
         width: 100%;
-        background-color: #eaeaea;
-
+        background-color: #eee;
         display: none;
     }
 
@@ -618,8 +623,7 @@ footer .copyright {
     }
 
     #toggle-gnb>li>.sub>li>a {
-        background-color: #eaeaea;
-        color: #fff;
+        color: #333;
     }
 
 

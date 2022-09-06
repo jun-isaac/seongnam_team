@@ -1,9 +1,15 @@
 // 헤더 메뉴
 $(function () {
     $('#header nav .gnb > li').hover(function () {
-        $(this).find('.sub').stop().slideDown();
+        $(this)
+        .find('.sub')
+        .stop()
+        .slideDown();
     }, function () {
-        $(this).find('.sub').stop().slideUp();
+        $(this)
+        .find('.sub')
+        .stop()
+        .slideUp();
     });
 });
 
@@ -22,15 +28,24 @@ $(function () {
 
 // 모바일 버전의 토글메뉴의 메뉴 슬라이드 애니메이션
 $(function () {
-    $('#toggle-gnb > li ').hover(function(){
-        $(this).find('.sub').toggle(function(){
-            $(this).find('.sub').stop().slideDown();
-            $(this).find('.sub').stop().slideUp();
+    $('#toggle-gnb > li ').hover(function () {
+        $(this)
+        .find('.sub')
+        .stop()
+        .toggle(function () {
+            $(this)
+            .find('.sub')
+            .stop()
+            .slideDown();
+            $(this)
+            .find('.sub')
+            .stop()
+            .slideUp();
         });
     });
 });
 
-// 검색바 뿅 
+// 검색바
 $(function () {
     $('#tool-zone .container .tool-wrap .search').click(function () {
         $('#tool-zone .container .tool-wrap .search-bar').toggleClass('on')
