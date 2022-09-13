@@ -9,9 +9,9 @@ $(function () {
         // 300 이 넘으면 커튼이 열려요
         if (scrollposition >= 300) {
             $('.left-curtain').css('transition-duration', '3s').css('transform',
-                'translateX(-375px)');
+                'translateX(-100%)');
             $('.right-curtain').css('transition-duration', '3s').css('transform',
-                'translateX(375px)');
+                'translateX(100%)');
         } else {
             $('.left-curtain').css('transition-duration', '3s').css('transform',
                 'translateX(0)');
